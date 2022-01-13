@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // Dark Mode Colors
+    <color name="background_color">@color/darkModeColor</color>
+    <color name="text_color">@color/white</color>
+    <color name="self_text_color">@color/white</color>
+    <color name="changing_icon_colors">@color/white</color>
+    <color name="fab_icon_colors">@color/white</color>
+    <color name="card_view_text_color">@color/white</color>
+    <color name="status_bar_color">@color/darkModeColor</color>
+
+</resources>

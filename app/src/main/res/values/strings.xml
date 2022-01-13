@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">iTask</string>
+    <string name="iTask">iTask</string>
+    <string name="new_to_itask">New to iTask," "</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="sign_out">Sign Out</string>
+
+
+</resources>

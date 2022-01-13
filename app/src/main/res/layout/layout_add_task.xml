@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lLayout_Addask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/averta"
+                android:text="Title: "
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_AddTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_color"
+                android:focusable="true"
+                android:maxLength="100"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/averta"
+                android:hint="Enter your task here..."
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/averta"
+                android:text="Due Date: "
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_setDueDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/icon_calendar"
+                android:fontFamily="@font/averta"
+                android:gravity="center_vertical"
+                android:text="  Choose Date"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btnCreateTask"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/create_task_bg"
+                android:fontFamily="@font/averta"
+                android:text="Create Task"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/tvCancelTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/averta"
+                android:text="Cancel"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

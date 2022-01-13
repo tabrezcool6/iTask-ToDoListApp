@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroundColors1"
+    tools:context=".Activity_Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/billion"
+        android:text="@string/iTask"
+        android:textColor="@color/black"
+        android:textSize="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/averta"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:defaultFocusHighlightEnabled="false"
+            android:fontFamily="@font/averta"
+            android:hint="Enter your email or number"
+            android:textCursorDrawable="@null" />
+
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/averta"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/averta"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null" />
+
+
+        <Button
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:background="@color/transparent"
+            android:fontFamily="@font/averta"
+            android:text="forgot Password?"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_button_bg"
+            android:fontFamily="@font/averta"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/averta"
+                android:text="@string/new_to_itask"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/transparent"
+                android:fontFamily="@font/averta"
+                android:text="Create Account"
+
+                android:textAllCaps="false"
+                android:textColor="@color/themeColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "880265143099",
+    "firebase_url": "https://itask-efa03-default-rtdb.firebaseio.com",
+    "project_id": "itask-efa03",
+    "storage_bucket": "itask-efa03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880265143099:android:cdaac159238e935a628d1e",
+        "android_client_info": {
+          "package_name": "com.example.itask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880265143099-93as2tls23tjh3f9ivttjslg61i07geh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBginUro05tBz_CQxMHIp4UgIqlk5W-70I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880265143099-93as2tls23tjh3f9ivttjslg61i07geh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

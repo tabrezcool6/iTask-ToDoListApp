@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Activity_Main">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/id_top_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/id_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_menu" />
+
+            <ImageButton
+                android:id="@+id/id_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="45px"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_search" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/id_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/averta"
+            android:text="Account:"
+            android:textColor="@color/text_color"
+            android:textFontWeight="1000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/id_self_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/themeColor"
+            android:clickable="true"
+            app:cardCornerRadius="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_self_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text=""
+                    android:textColor="@color/self_text_color"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/id_self_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/self_text_color"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/id_self_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/self_text_color"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/id_Other_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/averta"
+        android:text="Users:"
+        android:textColor="@color/text_color"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_top_LL" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:background="@color/background_color"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_Other_User" />
+
+
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/averta"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_recyclerView" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/themeColor"
+            android:backgroundTint="@color/themeColor"
+            app:fabCradleMargin="20px"
+            tools:ignore="BottomAppBar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/innerConatraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/red">
+
+
+                <ImageButton
+                    android:id="@+id/id_darkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/icon_nights_mode"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/extraMode"
+                    tools:ignore="MissingConstraints" />
+
+
+                <ImageButton
+                    android:id="@+id/extraMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:visibility="invisible"
+                    app:layout_constraintLeft_toRightOf="@id/id_darkMode"
+                    app:layout_constraintRight_toLeftOf="@id/id_signout"
+                    tools:ignore="MissingConstraints" />
+
+
+                <ImageButton
+                    android:id="@+id/id_signout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/icon_sign_out"
+                    app:layout_constraintLeft_toRightOf="@id/extraMode"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/themeColor"
+            android:src="@drawable/icon_add"
+            android:tint="@color/white"
+            app:layout_anchor="@id/bottomAppBar" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBarMainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

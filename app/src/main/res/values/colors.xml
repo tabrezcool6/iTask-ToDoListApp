@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="darkModeColor">#121212</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="opening">#8ca3cf</color>
+    <color name="themeColor">#4286f5</color>
+    <color name="BackGroundColors">#1f2128</color>
+    <color name="BackGroundColors1">#bcdae8</color>
+    <color name="red">#FF050A</color>
+    <color name="hintColor">#fff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="toolbarColor">#d2cdc8</color>
+    <color name="lightGrey">#747474</color>
+
+<!--    Light Mode Colors-->
+    <color name="background_color">@color/white</color>
+    <color name="text_color">@color/black</color>
+    <color name="self_text_color">@color/white</color>
+    <color name="changing_icon_colors">@color/black</color>
+    <color name="fab_icon_colors">@color/white</color>
+    <color name="card_view_text_color">@color/black</color>
+    <color name="status_bar_color">@color/themeColor</color>
+
+
+
+</resources>
